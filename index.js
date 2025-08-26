@@ -1,14 +1,17 @@
 const express = require('express');
-const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const cors = require('cors');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
+
 const app = express();
 const port = 7000;
-app.use(cors());  //ai system k  bola hoy middleware , eta use korar fole amader API sob jaygay support korbe.
-app.use(express.json())//frondend er data backend a pathanor jonno call kore dilei hobe
+app.use(cors(
+    // origin: 'http://localhost:5173'
+));
+app.use(express.json())
 
 // first-user-database-CURD
 // YQDQ3GsxCNhImbvl
-const uri = "mongodb+srv://first-user-database-CURD:YQDQ3GsxCNhImbvl@cluster0.amfxxji.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://test:xGS79FDHVcYQI8Rn@cluster0.amfxxji.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 
 const client = new MongoClient(uri, {
