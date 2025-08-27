@@ -9,8 +9,6 @@ app.use(cors(
 ));
 app.use(express.json())
 
-// first-user-database-CURD
-// YQDQ3GsxCNhImbvl
 const uri = "mongodb+srv://test:xGS79FDHVcYQI8Rn@cluster0.amfxxji.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 
